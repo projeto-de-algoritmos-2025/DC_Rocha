@@ -1,45 +1,54 @@
-**!! Atenção: Renomeie o seu repositório para (Tema)_(NomeDoProjeto). !!** 
+# DC_Rocha
 
-Temas:
- - Grafos1
- - Grafos2
- - PD
- - D&C
- - Greed
- - Final 
- 
- **!! *Não coloque os nomes dos alunos no título do repositório*. Exemplo de título correto: Grafos2_Labirinto-do-Minotauro !!**
- 
- (Apague essa seção)
+**Número da Lista**: 4  
+**Conteúdo da Disciplina**:Dividir e Conquistar
 
-# NomedoProjeto
-
-**Número da Lista**: X<br>
-**Conteúdo da Disciplina**: XXXXXXXXXX<br>
+---
 
 ## Alunos
-|Matrícula | Aluno |
-| -- | -- |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
 
-## Sobre 
-Descreva os objetivos do seu projeto e como ele funciona. 
+| Matrícula   | Aluno                   |
+|-------------|-------------------------|
+| 22/2022000  | Milena Fernandes Rocha |
+| 20/2045348  | Ingrid Alves Rocha     |
+
+---
+
+##  Sobre o Projeto
+
+
+
+---
+
+## Tecnologias Utilizadas
+
+
+---
+
+## Pré-processamento e Dataset
+
+
+### Fonte do Dataset
+
+
+## Como Executar
 
 ## Screenshots
-Adicione 3 ou mais screenshots do projeto em funcionamento.
-
-## Instalação 
-**Linguagem**: xxxxxx<br>
-**Framework**: (caso exista)<br>
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
-
-## Uso 
-Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
-
-## Outros 
-Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
 
 
 
+---
+
+
+## Link do Vídeo
+
+<div align="center">
+
+[![Assista ao vídeo](https://img.youtube.com/vi/DZ_3LrukvzA/0.jpg)](https://www.youtube.com/watch?v=DZ_3LrukvzA)
+
+**Fonte:** [Milena Rocha](https://github.com/milenafrocha) e [Ingrid Alves](https://github.com/alvesingrid)  
+Disponível em: [https://www.youtube.com/watch?v=DZ_3LrukvzA](https://www.youtube.com/watch?v=DZ_3LrukvzA)  
+Acesso em: 21 nov. 2024.
+
+</div>
 
