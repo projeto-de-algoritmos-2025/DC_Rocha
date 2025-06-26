@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizando Dividir e Conquistar: Multiplicação Binária</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Dividir & Conquistar: A Mágica da Multiplicação</h1>
+            <p>Uma visualização interativa do Algoritmo de Karatsuba em contraste com o método padrão.</p>
+        </header>
+
+        <div class="input-section">
+            <div class="input-group">
+                <label for="num1">Número X (Decimal)</label>
+                <input type="number" id="num1" value="815" min="0">
+            </div>
+            <div class="input-group">
+                <label for="num2">Número Y (Decimal)</label>
+                <input type="number" id="num2" value="301" min="0">
+            </div>
+            <button id="calculateBtn">Visualizar Cálculo</button>
+        </div>
+
+        <div id="results-container" class="hidden">
+            <div class="result-summary">
+                <h2>Resultado Final</h2>
+                <p id="summary-text"></p>
+            </div>
+            <div class="comparison-grid">
+                <div class="result-column">
+                    <div class="result-header standard">
+                        <h3>Método Padrão (Força Bruta)</h3>
+                        <div class="complexity">Complexidade: <span>O(n</span><sup>2</sup>)</div>
+                    </div>
+                    <h4>Passo a Passo:</h4>
+                    <pre id="standard-steps"></pre>
+                    <h4>Contagem de Operações:</h4>
+                    <p id="standard-ops"></p>
+                </div>
+
+                <div class="result-column">
+                    <div class="result-header karatsuba">
+                        <h3>Dividir e Conquistar (Karatsuba)</h3>
+                        <div class="complexity">Complexidade: <span>O(n<sup>log₂3</sup>) ≈ O(n<sup>1.585</sup>)</span></div>
+                    </div>
+                    
+                    <div id="karatsuba-visualization">
+                        
+                        <div class="step-card">
+                            <h4 class="step-title">1. DIVIDIR</h4>
+                            <p class="step-desc">Dividimos cada número de <span>n</span> bits em duas metades de <span>n/2</span> bits.</p>
+                            <div id="divide-step"></div>
+                        </div>
+
+                        <div class="step-card">
+                            <h4 class="step-title">2. CONQUISTAR (3 Multiplicações Menores)</h4>
+                            <p class="step-desc">Em vez de uma multiplicação $n \times n$, fazemos três multiplicações $n/2 \times n/2$ de forma recursiva.</p>
+                            <div id="conquer-step" class="conquer-grid"></div>
+                        </div>
+
+                        <div class="step-card">
+                            <h4 class="step-title">3. COMBINAR</h4>
+                            <p class="step-desc">A genialidade está em combinar os 3 resultados com shifts e somas para obter a resposta final, evitando a quarta multiplicação.</p>
+                            <div id="combine-step"></div>
+                        </div>
+                    </div>
+
+                    <h4>Contagem de Operações:</h4>
+                    <p id="karatsuba-ops"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
