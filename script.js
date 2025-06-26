@@ -1,14 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // --- ELEMENTOS DO DOM ---
+   
     const calculateBtn = document.getElementById('calculateBtn');
     const num1Input = document.getElementById('num1');
     const num2Input = document.getElementById('num2');
     const resultsContainer = document.getElementById('results-container');
     
-    // Contadores de operações globais
+   
     let opCounts = { standard: 0, karatsuba: 0 };
 
-    // --- FUNÇÕES AUXILIARES ---
+
     const decToBin = (dec) => (dec >>> 0).toString(2);
     const binToDec = (bin) => parseInt(bin, 2) || 0;
     const pad = (binStr, len) => binStr.padStart(len, '0');
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return res.replace(/^0+/, '') || '0';
     };
 
-    // --- ALGORITMOS DE MULTIPLICAÇÃO ---
+
 
     function standardMultiplication(x, y) {
         opCounts.standard = 0;
@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return binaryAdd(binaryAdd(term1, term2), p2);
     }
     
-    // --- LÓGICA DE VISUALIZAÇÃO ---
+ 
     
     function visualizeKaratsuba(x, y) {
         let n = Math.max(x.length, y.length);
@@ -97,14 +97,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const a = x.substring(0, half), b = x.substring(half);
         const c = y.substring(0, half), d = y.substring(half);
 
-        // -- Etapa 1: DIVIDIR --
+       
         const divideHtml = `
             <p>X = <span class="binary-split"><span class="part-a">${a}</span><span class="part-b">${b}</span></span> (x₁ | x₀)</p>
             <p>Y = <span class="binary-split"><span class="part-c">${c}</span><span class="part-d">${d}</span></span> (y₁ | y₀)</p>
         `;
         document.getElementById('divide-step').innerHTML = divideHtml;
 
-        // -- Etapa 2: CONQUISTAR --
+   
         const p1 = karatsuba(a, c);
         const p2 = karatsuba(b, d);
         const a_plus_b = binaryAdd(a, b);
@@ -133,7 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
         document.getElementById('conquer-step').innerHTML = conquerHtml;
 
-        // -- Etapa 3: COMBINAR --
+    
         const p_middle = binarySubtract(binarySubtract(p3, p1), p2);
         const term1 = p1 + '0'.repeat(n);
         const term2 = p_middle + '0'.repeat(half);
@@ -170,36 +170,35 @@ ${'-'.repeat(maxLen)}
         document.getElementById('standard-steps').textContent = standard.steps;
         document.getElementById('standard-ops').textContent = `Multiplicações de 1 bit: ${opCounts.standard.toLocaleString('pt-BR')}`;
         
-        // --- Cálculo e Visualização do Karatsuba ---
-        // A chamada principal reseta o contador
+    
         const karatsubaResult = karatsuba(bin1, bin2); 
-        // A visualização usa os valores calculados
+      
         visualizeKaratsuba(bin1, bin2);
 
         document.getElementById('karatsuba-ops').textContent = `Multiplicações de 1 bit (recursivas): ${opCounts.karatsuba.toLocaleString('pt-BR')}`;
         
-        // --- Resumo Final ---
+   
         const decimalResult = binToDec(karatsubaResult);
         document.getElementById('summary-text').innerHTML = `
             ${val1} &times; ${val2} = <strong>${decimalResult.toLocaleString('pt-BR')}</strong><br>
             Resultado em Binário: <strong>${karatsubaResult}</strong>
         `;
 
-        // Animação de entrada dos cartões
+   
         document.querySelectorAll('.step-card').forEach((card, index) => {
             setTimeout(() => card.classList.add('visible'), index * 200);
         });
 
-        // Renderiza as fórmulas LaTeX
+        
         MathJax.typeset();
     }
 
     calculateBtn.addEventListener('click', () => {
-        // Reseta a visibilidade para a animação rodar novamente
+      
         document.querySelectorAll('.step-card').forEach(card => card.classList.remove('visible'));
         calculateAndDisplay();
     });
     
-    // Exibe um cálculo inicial ao carregar a página
+
     calculateAndDisplay();
 });
