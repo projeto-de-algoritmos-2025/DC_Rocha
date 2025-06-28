@@ -16,7 +16,7 @@
 
 ##  Sobre o Projeto
 
-
+Esta aplicação web é uma ferramenta intuitiva e educativa, projetada para demonstrar visualmente a diferença fundamental entre o método padrão de multiplicação de binários, que funciona de forma semelhante à multiplicação escolar, e o algoritmo de Karatsuba, um poderoso exemplo da estratégia "Dividir e Conquistar". Através de uma comparação interativa e passo a passo, o projeto mostra a teoria por trás da eficiência algorítmica, permitindo que qualquer pessoa compreenda como Karatsuba alcança um desempenho superior ao trocar operações computacionalmente custosas por outras mais simples, transformando um conceito abstrato da ciência da computação em uma experiência de aprendizado.
 
 ---
 
