@@ -22,16 +22,25 @@ Esta aplicação web é uma ferramenta intuitiva e educativa, projetada para dem
 
 ## Tecnologias Utilizadas
 
+HTML: Para a estruturação semântica do conteúdo.
+CSS: Para a estilização, design responsivo e criação de uma interface.
+JavaScript: Para toda a lógica computacional, implementação dos algoritmos e manipulação interativa da página.
+GitPages: Deploy para acesso: https://projeto-de-algoritmos-2025.github.io/DC_Rocha/
 
 ---
 
-## Pré-processamento e Dataset
-
-
-### Fonte do Dataset
-
-
 ## Como Executar
+
+1. Execute o git clone do repositório do projeto com o comando:
+   ```
+   git clone https://github.com/projeto-de-algoritmos-2025/DC_Rocha.git
+   ```
+3. Abra o arquivo index.html diretamente em seu navegador ou no VScode aperte o botão inferior direito `Go Live`.
+4. Na tela inicial, insira dois números inteiros nos campos designados.
+5. Na tela inicial, insira dois números inteiros nos campos designados e clique no botão "Visualizar Cálculo".
+6. Role a página para explorar os resultados e observar o passo a passo de cada método, com destaque para a visualização do algoritmo de Karatsuba.
+
+---
 
 ## Screenshots
 
