@@ -82,10 +82,11 @@ Autor: [Milena Rocha](https://github.com/milenafrocha) e [Ingrid Alves](https://
 
 <div align="center">
 
-[![Assista ao vídeo](https://img.youtube.com/vi/DZ_3LrukvzA/0.jpg)](https://www.youtube.com/watch?v=DZ_3LrukvzA)
+[![Assista ao vídeo](https://img.youtube.com/vi/3-HYo4doo2k/0.jpg)](https://youtu.be/3-HYo4doo2k)
+
 
 **Fonte:** [Milena Rocha](https://github.com/milenafrocha) e [Ingrid Alves](https://github.com/alvesingrid)  
-Disponível em: [https://www.youtube.com/watch?v=DZ_3LrukvzA](https://www.youtube.com/watch?v=DZ_3LrukvzA)  
+Disponível em: [https://youtu.be/3-HYo4doo2k](https://youtu.be/3-HYo4doo2k)  
 Acesso em: 27 junho. 2024.
 
 </div>
